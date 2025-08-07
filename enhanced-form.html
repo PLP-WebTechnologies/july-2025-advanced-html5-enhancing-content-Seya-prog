@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced HTML5 Content & Forms</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        
+        section {
+            margin-bottom: 40px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        
+        th {
+            background-color: #f4f4f4;
+        }
+        
+        fieldset {
+            margin: 20px 0;
+            padding: 15px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+        }
+        
+        legend {
+            font-weight: bold;
+            padding: 0 10px;
+        }
+        
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+        
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        
+        input[type="checkbox"], input[type="radio"] {
+            width: auto;
+            margin-right: 5px;
+        }
+        
+        button {
+            background-color: #007bff;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        
+        button:hover {
+            background-color: #0056b3;
+        }
+        
+        .media-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        
+        audio, video {
+            max-width: 100%;
+            margin: 10px 0;
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Enhanced HTML5 Content & Forms Showcase</h1>
+        <p>This page demonstrates advanced HTML5 content elements and comprehensive form features.</p>
+    </header>
+
+    <main>
+        <!-- Lists Section -->
+        <section>
+            <h2>Lists Demonstration</h2>
+            
+            <h3>Unordered List - Web Technologies</h3>
+            <ul>
+                <li>HTML5 - Markup Language</li>
+                <li>CSS3 - Styling Language</li>
+                <li>JavaScript - Programming Language</li>
+                <li>React - Frontend Framework</li>
+                <li>Node.js - Backend Runtime</li>
+            </ul>
+
+            <h3>Ordered List - Development Process</h3>
+            <ol>
+                <li>Planning and Requirements Gathering</li>
+                <li>Design and Wireframing</li>
+                <li>Development and Coding</li>
+                <li>Testing and Quality Assurance</li>
+                <li>Deployment and Maintenance</li>
+            </ol>
+
+            <h3>Description List - HTML5 Form Elements</h3>
+            <dl>
+                <dt>Input Element</dt>
+                <dd>Used for various types of user input including text, email, password, and more.</dd>
+                
+                <dt>Select Element</dt>
+                <dd>Creates dropdown lists for user selection from predefined options.</dd>
+                
+                <dt>Textarea Element</dt>
+                <dd>Provides multi-line text input areas for longer content.</dd>
+                
+                <dt>Fieldset Element</dt>
+                <dd>Groups related form elements together for better organization and accessibility.</dd>
+            </dl>
+        </section>
+
+        <!-- Tables Section -->
+        <section>
+            <h2>Tables Demonstration</h2>
+            
+            <h3>HTML5 Form Input Types Comparison</h3>
+            <table>
+                <caption>Comparison of HTML5 Input Types and Their Features</caption>
+                <thead>
+                    <tr>
+                        <th>Input Type</th>
+                        <th>Purpose</th>
+                        <th>Validation</th>
+                        <th>Mobile Keyboard</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>email</td>
+                        <td>Email addresses</td>
+                        <td>Built-in email format validation</td>
+                        <td>Email-optimized keyboard</td>
+                    </tr>
+                    <tr>
+                        <td>tel</td>
+                        <td>Phone numbers</td>
+                        <td>No built-in validation</td>
+                        <td>Numeric keypad</td>
+                    </tr>
+                    <tr>
+                        <td>url</td>
+                        <td>Web addresses</td>
+                        <td>Built-in URL format validation</td>
+                        <td>URL-optimized keyboard</td>
+                    </tr>
+                    <tr>
+                        <td>number</td>
+                        <td>Numeric input</td>
+                        <td>Min/max range validation</td>
+                        <td>Numeric keypad</td>
+                    </tr>
+                    <tr>
+                        <td>date</td>
+                        <td>Date selection</td>
+                        <td>Date format validation</td>
+                        <td>Date picker interface</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Media Section -->
+        <section>
+            <h2>Media Demonstration</h2>
+            
+            <h3>Images</h3>
+            <figure class="media-container">
+                <img src="https://via.placeholder.com/600x300/007bff/ffffff?text=HTML5+Forms+Demo" 
+                     alt="HTML5 Forms Demonstration Placeholder Image"
+                     width="600" height="300">
+                <figcaption>HTML5 Forms and Content Enhancement Demonstration</figcaption>
+            </figure>
+
+            <h3>Audio Content</h3>
+            <div class="media-container">
+                <audio controls>
+                    <source src="sample-audio.mp3" type="audio/mpeg">
+                    <source src="sample-audio.ogg" type="audio/ogg">
+                    Your browser does not support the audio element.
+                </audio>
+                <p><em>Note: Audio file not included in this demo, but the element is properly structured.</em></p>
+            </div>
+
+            <h3>Video Content</h3>
+            <div class="media-container">
+                <video controls width="600" height="300">
+                    <source src="sample-video.mp4" type="video/mp4">
+                    <source src="sample-video.webm" type="video/webm">
+                    Your browser does not support the video element.
+                </video>
+                <p><em>Note: Video file not included in this demo, but the element is properly structured.</em></p>
+            </div>
+        </section>
+
+        <!-- Comprehensive HTML5 Form Section -->
+        <section>
+            <h2>Comprehensive HTML5 Form</h2>
+            <p>This form demonstrates various HTML5 input types, validation attributes, and accessibility features.</p>
+            
+            <form action="#" method="post" novalidate>
+                <!-- Personal Information Fieldset -->
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    
+                    <label for="firstName">First Name (Required):</label>
+                    <input type="text" 
+                           id="firstName" 
+                           name="firstName" 
+                           required 
+                           minlength="2" 
+                           maxlength="50"
+                           placeholder="Enter your first name"
+                           autocomplete="given-name">
+
+                    <label for="lastName">Last Name (Required):</label>
+                    <input type="text" 
+                           id="lastName" 
+                           name="lastName" 
+                           required 
+                           minlength="2" 
+                           maxlength="50"
+                           placeholder="Enter your last name"
+                           autocomplete="family-name">
+
+                    <label for="email">Email Address (Required):</label>
+                    <input type="email" 
+                           id="email" 
+                           name="email" 
+                           required 
+                           placeholder="example@domain.com"
+                           autocomplete="email">
+
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" 
+                           id="phone" 
+                           name="phone" 
+                           pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                           placeholder="123-456-7890"
+                           autocomplete="tel">
+
+                    <label for="birthdate">Date of Birth:</label>
+                    <input type="date" 
+                           id="birthdate" 
+                           name="birthdate" 
+                           min="1900-01-01" 
+                           max="2023-12-31">
+
+                    <label for="website">Personal Website:</label>
+                    <input type="url" 
+                           id="website" 
+                           name="website" 
+                           placeholder="https://www.example.com"
+                           autocomplete="url">
+                </fieldset>
+
+                <!-- Account Information Fieldset -->
+                <fieldset>
+                    <legend>Account Information</legend>
+                    
+                    <label for="username">Username (Required):</label>
+                    <input type="text" 
+                           id="username" 
+                           name="username" 
+                           required 
+                           minlength="3" 
+                           maxlength="20"
+                           pattern="[a-zA-Z0-9_]+"
+                           placeholder="Enter username (letters, numbers, underscore only)"
+                           autocomplete="username">
+
+                    <label for="password">Password (Required):</label>
+                    <input type="password" 
+                           id="password" 
+                           name="password" 
+                           required 
+                           minlength="8"
+                           pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d@$!%*?&]{8,}"
+                           placeholder="Min 8 chars, 1 uppercase, 1 lowercase, 1 number"
+                           autocomplete="new-password">
+
+                    <label for="confirmPassword">Confirm Password (Required):</label>
+                    <input type="password" 
+                           id="confirmPassword" 
+                           name="confirmPassword" 
+                           required 
+                           placeholder="Re-enter your password"
+                           autocomplete="new-password">
+                </fieldset>
+
+                <!-- Preferences Fieldset -->
+                <fieldset>
+                    <legend>Preferences & Additional Information</legend>
+                    
+                    <label for="age">Age:</label>
+                    <input type="number" 
+                           id="age" 
+                           name="age" 
+                           min="13" 
+                           max="120" 
+                           placeholder="Enter your age">
+
+                    <label for="experience">Years of Programming Experience:</label>
+                    <input type="range" 
+                           id="experience" 
+                           name="experience" 
+                           min="0" 
+                           max="30" 
+                           value="5" 
+                           oninput="this.nextElementSibling.value = this.value">
+                    <output>5</output> years
+
+                    <label for="favoriteColor">Favorite Color:</label>
+                    <input type="color" 
+                           id="favoriteColor" 
+                           name="favoriteColor" 
+                           value="#007bff">
+
+                    <label for="country">Country:</label>
+                    <select id="country" name="country" required>
+                        <option value="">Select your country</option>
+                        <option value="us">United States</option>
+                        <option value="ca">Canada</option>
+                        <option value="uk">United Kingdom</option>
+                        <option value="de">Germany</option>
+                        <option value="fr">France</option>
+                        <option value="jp">Japan</option>
+                        <option value="au">Australia</option>
+                        <option value="other">Other</option>
+                    </select>
+
+                    <fieldset>
+                        <legend>Programming Languages (Select all that apply):</legend>
+                        <label><input type="checkbox" name="languages" value="html"> HTML</label>
+                        <label><input type="checkbox" name="languages" value="css"> CSS</label>
+                        <label><input type="checkbox" name="languages" value="javascript"> JavaScript</label>
+                        <label><input type="checkbox" name="languages" value="python"> Python</label>
+                        <label><input type="checkbox" name="languages" value="java"> Java</label>
+                        <label><input type="checkbox" name="languages" value="csharp"> C#</label>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Preferred Development Environment:</legend>
+                        <label><input type="radio" name="ide" value="vscode" required> Visual Studio Code</label>
+                        <label><input type="radio" name="ide" value="webstorm"> WebStorm</label>
+                        <label><input type="radio" name="ide" value="sublime"> Sublime Text</label>
+                        <label><input type="radio" name="ide" value="atom"> Atom</label>
+                        <label><input type="radio" name="ide" value="other"> Other</label>
+                    </fieldset>
+
+                    <label for="bio">Brief Bio:</label>
+                    <textarea id="bio" 
+                              name="bio" 
+                              rows="4" 
+                              maxlength="500"
+                              placeholder="Tell us about yourself (max 500 characters)"></textarea>
+
+                    <label for="resume">Upload Resume (PDF only):</label>
+                    <input type="file" 
+                           id="resume" 
+                           name="resume" 
+                           accept=".pdf">
+
+                    <label for="startTime">Preferred Start Time:</label>
+                    <input type="time" 
+                           id="startTime" 
+                           name="startTime">
+
+                    <label for="projectDeadline">Project Deadline:</label>
+                    <input type="datetime-local" 
+                           id="projectDeadline" 
+                           name="projectDeadline">
+
+                    <label for="budget">Monthly Budget ($):</label>
+                    <input type="number" 
+                           id="budget" 
+                           name="budget" 
+                           min="0" 
+                           step="0.01" 
+                           placeholder="0.00">
+
+                    <label for="referralCode">Referral Code (Read-only):</label>
+                    <input type="text" 
+                           id="referralCode" 
+                           name="referralCode" 
+                           value="REF2023HTML5" 
+                           readonly>
+                </fieldset>
+
+                <!-- Terms and Submission -->
+                <fieldset>
+                    <legend>Terms and Conditions</legend>
+                    
+                    <label>
+                        <input type="checkbox" name="terms" required>
+                        I agree to the Terms and Conditions (Required)
+                    </label>
+                    
+                    <label>
+                        <input type="checkbox" name="newsletter">
+                        Subscribe to newsletter for updates
+                    </label>
+                </fieldset>
+
+                <!-- Form Buttons -->
+                <div style="margin-top: 20px;">
+                    <button type="submit">Submit Form</button>
+                    <button type="reset" style="background-color: #6c757d; margin-left: 10px;">Reset Form</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 HTML5 Enhanced Content & Forms Demo. This page demonstrates advanced HTML5 features including semantic markup, form validation, and media integration.</p>
+    </footer>
+</body>
+</html>
